@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Calculadora de imc</title>
+  </head>
+  <body>
+    <main id="container">
+      <picture>
+        <img
+          class="img"
+          src="./assets/img/illustration.svg"
+          alt="imagem com aluno e um personal trainer levantando pesos"
+        />
+      </picture>
+      <section class="calculator">
+        <h1 class="tittle">Calculadora - Imc</h1>
+        <form action="" id="form">
+          <label for="weight">Peso em kg</label>
+          <div class="input-box">
+            <i class="fa-solid fa-weight-hanging"></i>
+            <input
+              class="input-field"
+              type="text"
+              name="weight"
+              id="weight"
+              required
+            />
+            <span>kg</span>
+          </div>
+
+          <label for="height">Altura em m</label>
+          <div class="input-box">
+            <i class="fa-solid fa-ruler"></i>
+            <input
+              class="input-field"
+              type="text"
+              name="height"
+              id="height"
+              required
+            />
+            <span>m</span>
+          </div>
+          <button id="calculate">Calcular</button>
+        </form>
+        <div id="infos" class="hidden">
+          <div id="result">
+            <div id="imc">
+              <span id="value"></span>
+              <span>Seu imc</span>
+            </div>
+            <div id="description">
+              <span></span>
+            </div>
+          </div>
+          <span class="more-info">
+            <a
+              href="https://www.saude.rj.gov.br/obesidade/noticias/2019/03/imc-voce-sabe-o-que-o-indice-de-massa-corporal-diz-sobre-sua-saude"
+              target="_blank"
+              >Mais informações sobre imc
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </span>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
